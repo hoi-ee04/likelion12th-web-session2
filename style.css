@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    column-gap: 10px;
+}
+
+input, button {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+input {
+    width: 500px;
+    padding: 0 15px;
+    outline: none;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    background-color: #3498db;
+    color: white;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 10px;
+    width: 500px;
+    margin: 30px auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #d3d3d3;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+li input[type="checkbox"] {
+    flex-shrink: 0;     /* 체크박스 너비 고정 */
+    width: 50px;
+}
+
+li span {
+    display: inline-block;
+    width: 1000px;      /* 리스트 너비 열에 맞춰 정렬 */
+    justify-content: flex-start;
+    margin-left: 0px;
+    text-align: left;
+}
+
+li button {
+    margin-left: 10px;
+    flex-shrink: 0;
+    width: 70px; /* 삭제 버튼의 너비를 60px로 지정 */
+    height: 35px; /* 삭제 버튼의 높이를 30px로 지정 */
+}
+
+.completed span {       /* 체크 시 내용에 회색 취소선 */
+    text-decoration: line-through;
+    color: #888;
+}
